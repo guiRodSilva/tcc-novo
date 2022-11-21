@@ -1,0 +1,60 @@
+@media (max-width:425px){
+
+    form{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .nome_email{
+        display: flex ; 
+        flex-direction: column;
+      }
+    
+      .senha_endereco{
+        display: flex;
+        flex-direction: column;
+      }
+
+      #email {
+        margin-left: 0px;
+        margin-top: 18px;
+    } 
+
+    #endereco {
+        margin-left: 0px;
+    }
+
+    .nome_email input {
+        width: 385px;
+    }
+    .senha_endereco input {
+        width: 385px;
+    }    
+
+    .confirmar_senha input {
+        width: 385px;
+    }
+    .cid input {
+        width: 385px;
+    }
+
+    .final p{
+        width: 400px;
+    }
+
+    .final {
+        margin-right: 10px;
+    }
+
+    .botao button{
+        padding: 8px 105px 8px 105px;
+    }
+
+    .final a {
+    font-size: 20px;
+    
+    }
+
+    .voltar {
+        opacity: 0;
+    }
+}

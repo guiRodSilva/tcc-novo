@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login </title>
+    <link rel="icon" href="/Imagens/logo-redonda.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/login/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/login/responsivo.css">
+</head>
+<body>
+ <!-- placeholder texto atrás do bloco que da para escrever em cima -->
+ <!-- _self abrir na mesma janela -->
+    <a href="/"> <img src="/Imagens/Icones/Voltar.svg" alt="voltar" class="voltar"> </a> 
+
+    <div class="conteudo">
+ 
+        <img src="/Imagens/logo.png" alt="logo" class="logo">
+    <div class="bem_vindo">
+        <h2> Bem vindo(a) ao GLUB</h2>
+    </div>
+<form action="/login" method="POST">
+    <div class="login">
+        <input type="text" id="use_email" name="use_email" placeholder="Email">
+        
+    </div> 
+    <div class="senhaaa">
+        <input type="password" id="use_senha" name="use_senha" class="senha" placeholder="Senha">
+        <button type="button" class="ver-senha"> <img src="/Imagens/no-view.svg" alt="imagem" class="imagem-view"></button>
+    </div>
+    <div class="esqueceu_senha"> 
+        <a href="/Programação/Visao Usuario/Gonas/verifica-email/email-verifica.html" target="_self">
+        Esqueceu sua senha?</a>
+    </div>
+    
+    {{#if message }}
+            <h4 class="alerta">{{message}}</h4>
+        {{/if}}
+    <div class="entrar">
+        <button class="btn_entrar" type="submit" value="Enviar"> Entrar</button>
+    </div>
+
+    <div class="divisor"></div>
+
+    <div class="ir_cadastrar">
+        <a href="/cadastrar" targe="_self" > Ainda não possui uma conta no site? Crie sua conta </a>
+    </div>
+    </div>
+
+    <script src="/login/script.js"></script>
+</form> 
+  
+</body>
+</html>

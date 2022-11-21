@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cadastrar </title>
+    <link rel="icon" href="/Imagens/logo-redonda.png" type="image/x-icon">
+    <link rel="stylesheet" href="/cadastrar/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/cadastrar/responsivo.css">
+</head>
+<body>
+
+  <a href="/"><img src="/Imagens/Icones/Voltar.svg" class="voltar" alt="voltar"> </a>
+     
+
+  <div class="content">
+    
+
+    <div class="componentes">
+
+      <a href="/">
+        <img src="/Imagens/logo.png"  class="logo" alt="logo">
+      </a>
+      <h2>Cadastrar sua Conta</h2>
+      <form action="/cadastrar" method="POST">
+
+      <div class="nome_email">
+        <input type="text" id="use_nome" name="use_nome" placeholder="Nome" class="espaco">
+        <input type="email" id="use_email" name="use_email" placeholder="Email">
+    </div>
+
+      <div class="nome_email">
+        <input type="password" id="use_senha" name="use_senha" placeholder="Senha" class="espaco">
+        <input type="password" id="confirmaSenha" name="confirmaSenha"  placeholder="Confirma Senha">
+
+      </div>
+      <div class="nome_email">
+        <input type="text" id="rua" name="rua"  placeholder="Rua" class="espaco">
+        <input type="number" id="numero" name="numero"  placeholder="Número">
+      </div>
+
+      <div class="nome_email">
+        <input type="text" id="bairro" name="bairro"  placeholder="Bairro" class="espaco">
+        <input type="number" id="CEP" name="CEP"  placeholder="CEP">
+      </div>
+
+      <div class="nome_email">
+        <input type="text" id="cidade" name="cidade"  placeholder="Cidade" class="espaco">
+        <input type="text" id="UF" name="UF"  placeholder="UF">
+      </div>
+      {{#if message }}
+            <h4 class="alerta">{{message}}</h4>
+        {{/if}}
+      <div class="botao">
+     <button type="submit" value="Enviar">  Cadastrar </button>
+    </form>
+    
+      <div class="divisor"></div>
+      
+      <div class="final">
+      <a href="/login" targe="_self" >Já possui uma conta? Acesse agora</a>
+       
+      <p>Ao continuar, você concorda com os Termos de Serviços do GLUB confrima que leu a nossa Política de Privacidade</p>
+    </div>
+  </div>
+  </div>
+  </form>
+  
+
+</body>
+</html>

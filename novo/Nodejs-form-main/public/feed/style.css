@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+body{
+    background-color: #FAFAFA;
+}
+
+img[src="/Imagens/Icones/Buscar.svg"]{
+    visibility: hidden;
+    display: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+    margin-top: 34px;
+    margin-bottom: 59px;
+}
+
+header input{
+    border: none;
+    background: url('/Imagens/Icones/Buscar.svg') no-repeat top left;
+    padding: 13px 21px 13px 55px;
+    font-size: 20px;
+    border: 1px solid #5DA649;
+    border-radius: 20px;
+    background-position-x: 13px;
+    background-position-y: 7px;
+    background-size: 40px;
+    margin-left: 90px;
+    width: 521px;
+    
+}
+
+header input:focus{
+    outline:0;
+}
+
+header .perfil-icones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+}
+
+header .perfil-icones a{
+    padding: 10px;
+    font-size: 20px;
+    padding-left: 24px;
+    
+    
+}
+
+.dropdown-toggle::after {
+    content: none !important;
+}
+
+.dropdown-menu {
+    min-width: 15rem !important;
+    --bs-dropdown-border-radius: 20px !important;
+}
+
+.btn{
+    border: none !important;
+}
+
+:root {
+    --bs-link-hover-color: none !important;
+    --bs-link-color: none !important; 
+
+}
+
+a{
+    text-decoration: none !important;
+}
+
+
+img[src="/Imagens/avatar feminino.jpg"]{
+    width: 64.64px;
+    height: 64px;
+}
+
+.feed-container{
+    margin: auto;
+    width: 90%;
+    border: 1px solid #797979;
+    border-radius: 20px;
+    padding-top: 92px;
+    padding-right: 79px;
+    padding-left: 110px;
+    padding-bottom: 84px;
+}
+
+.feed-container .principal-noticia{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 149px;
+    
+}
+
+.feed-container .principal-noticia .noticia-top1 .texto-noticia{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    left: 38px;
+    top: 230px;
+    color: white;
+}
+
+.feed-container .principal-noticia .noticia-top1 .texto-noticia h3{
+    font-weight: 700;
+    font-size: 35px;
+
+}
+
+.feed-container .principal-noticia .noticia-top1 .texto-noticia p{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+
+.feed-container .principal-noticia .noticia-top1 .fixado{
+    position: absolute;
+    display: flex;
+    left: 322px;
+    top: 45px;
+    align-items: center;
+    color: white;
+}
+
+.feed-container .principal-noticia .noticia-top2 .texto-noticia{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    left: 794px;
+    top: 230px;
+    color: white;
+}
+
+.feed-container .principal-noticia .noticia-top2 .texto-noticia h3{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+}
+
+.feed-container .principal-noticia .noticia-top2 .texto-noticia p{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+p{
+    margin: 0 !important;
+}
+
+.outras-noticias{
+    display: grid;
+    gap: 77px;
+    flex-direction: column;
+    
+}
+
+.outras-noticias .noticia{
+    display: flex;
+    flex-direction: row;
+}
+
+.outras-noticias .noticia .outras-noticias-texto{
+    display: grid;
+    gap: 77px;
+    margin-left: 52px;
+}
+
+.outras-noticias .noticia .outras-noticias-texto .texto-baixo1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.outras-noticias .noticia .outras-noticias-texto .texto-baixo2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* .outras-noticias img{
+    filter: brightness(50%);
+} */
+
+.outras-noticias h3{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.outras-noticias p{
+    font-weight: 400;
+    font-size: 23px;
+}
+
+
+/* RODAPÉ */
+
+footer .footer-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    margin-top: 76px;
+    border-top: 1px solid #5DA649;
+
+}
+footer .footer-container .images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer img{
+    width: 78px;
+    height: 78px;
+
+}
+
+footer .footer-container a{
+    text-decoration: none;
+    padding: 50px;
+    
+}
+
+
+footer .footer-container p{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 192px;
+    color: rgba(0, 0, 0, 0.69);
+    
+
+}
+
+.fechar-input{
+    display: none;
+    visibility: hidden;
+    margin-left: 10px;
+    color:#5DA649;
+    background: white;
+    border: none;
+    font-size: 30px;
+    position: absolute;
+    left: 354px;
+    margin-bottom: 2px;
+}
+
+.fechar-input.active{
+    display: inherit;
+    visibility: visible;
+}
+
+.perfil-icones.remove{
+    display: none;
+    visibility: hidden;
+}
+
+.logo.remove{
+    display: none;
+    visibility: hidden;
+}
+input.active{
+    display: inherit;
+    visibility: visible;
+    margin: 0px;
+    position: relative;
+}

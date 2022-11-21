@@ -1,0 +1,54 @@
+@media (max-width:425px){
+
+
+.content{   
+  width: 1070px;
+}
+
+.parte{
+    width: 1000px;
+}
+.imagem{
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+}
+
+.parte h3{
+    font-size: 30px;
+    margin-left: 10px;
+
+}
+
+.text_but{
+    margin-bottom: 70px;
+}
+
+.nome{
+    width: 370px;
+}
+
+
+#email{
+    width: 170px;
+}
+#senha{
+      width: 170px;
+    
+}
+
+.conf_senha{
+    width: 370px ;
+}
+
+#end{
+    width: 170px;
+}
+
+#cidade{
+    width: 170px;
+}
+
+
+
+}
