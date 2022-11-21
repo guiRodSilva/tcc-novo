@@ -4,6 +4,8 @@ const bcrypt = require('bcryptjs');
 const { connect } = require("../database/connection");
 const { createConnection } = require("mysql");
 const { promisify } = require("util");
+const login = require('../controllers/login')
+const enderecos = require('../controllers/enderecos')
 
 
 exports.update = async (req, res) => {
@@ -20,7 +22,7 @@ exports.update = async (req, res) => {
         }
         
         db.query(
-            'UPDATE usuarios SET (use_nome,use_email, use_senha, use_tipo) VALUES (?,?,?, 0)', [use_nome, use_email, use_senha = hashedPassword], async (err) => {
+            'UPDATE usuarios SET use_nome = ?, use_email =?, use_senha =? WHERE use_email = ?', [use_nome, use_email, use_senha = hashedPassword, login.useEmail], async (err) => {
 
                 if (err) {
                     return db.rollback(() => {
@@ -31,9 +33,12 @@ exports.update = async (req, res) => {
                     });
                 }
 
+                
+
              
                 db.query(
-                    'UPDATE cidades SET (cid_nome, cid_uf) VALUES (?,?)', [cidade, UF], (err) => {
+
+                    'UPDATE cidades SET cid_nome = ?, cid_uf = ? WHERE cid_id = ?', [cidade, UF, enderecos.cidadeId], (err) => {
                         if (err) {
                             return db.rollback(() => {
                               
@@ -45,7 +50,7 @@ exports.update = async (req, res) => {
 
                 db.query(
             
-                    'UPDATE enderecos SET (end_logradouro, end_num, end_bairro, end_cep) VALUES (?,?,?,?)', [rua, numero, bairro, CEP], (err) => {
+                    'UPDATE enderecos SET end_logradouro = ?, end_num = ?, end_bairro =?, end_cep =? WHERE use_id = ?', [rua, numero, bairro, CEP, login.useId], (err) => {
                         
                         
                         if (err) {

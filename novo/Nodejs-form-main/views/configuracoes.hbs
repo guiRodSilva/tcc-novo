@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Configurações </title>
+    <title> GLUB • Configurações </title>
     <link rel="shortcut icon" href="/Imagens/logo-redonda.png" type="image/x-icon">
     <link rel="stylesheet" href="/configuracoes/style.css">
     <link rel="stylesheet" href="/configuracoes/responsivo.css">
@@ -95,6 +95,9 @@
                 <input type="text" id="UF" name="UF" placeholder="UF">
             </div>
             </div>
+             {{#if message }}
+                <h4 class="alerta">{{message}}</h4>
+            {{/if}}
             <button class="baixo" type="submit"> Salvar </button>
         </form>
     </div>

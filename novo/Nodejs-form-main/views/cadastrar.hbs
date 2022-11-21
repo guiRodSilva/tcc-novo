@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Cadastrar </title>
+    <title> GLUB • Cadastrar </title>
     <link rel="icon" href="/Imagens/logo-redonda.png" type="image/x-icon">
     <link rel="stylesheet" href="/cadastrar/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,28 +32,28 @@
       <form action="/cadastrar" method="POST">
 
       <div class="nome_email">
-        <input type="text" id="use_nome" name="use_nome" placeholder="Nome" class="espaco">
-        <input type="email" id="use_email" name="use_email" placeholder="Email">
+        <input type="text" id="use_nome" name="use_nome" placeholder="Nome" class="espaco" required>
+        <input type="email" id="use_email" name="use_email" placeholder="Email" required>
     </div>
 
       <div class="nome_email">
-        <input type="password" id="use_senha" name="use_senha" placeholder="Senha" class="espaco">
-        <input type="password" id="confirmaSenha" name="confirmaSenha"  placeholder="Confirma Senha">
+        <input type="password" id="use_senha" name="use_senha" placeholder="Senha" class="espaco" required>
+        <input type="password" id="confirmaSenha" name="confirmaSenha"  placeholder="Confirma Senha" required>
 
       </div>
       <div class="nome_email">
-        <input type="text" id="rua" name="rua"  placeholder="Rua" class="espaco">
-        <input type="number" id="numero" name="numero"  placeholder="Número">
+        <input type="text" id="rua" name="rua"  placeholder="Rua" class="espaco" required>
+        <input type="number" id="numero" name="numero"  placeholder="Número" required>
       </div>
 
       <div class="nome_email">
-        <input type="text" id="bairro" name="bairro"  placeholder="Bairro" class="espaco">
-        <input type="number" id="CEP" name="CEP"  placeholder="CEP">
+        <input type="text" id="bairro" name="bairro"  placeholder="Bairro" class="espaco" required>
+        <input type="number" id="CEP" name="CEP"  placeholder="CEP" required>
       </div>
 
       <div class="nome_email">
-        <input type="text" id="cidade" name="cidade"  placeholder="Cidade" class="espaco">
-        <input type="text" id="UF" name="UF"  placeholder="UF">
+        <input type="text" id="cidade" name="cidade"  placeholder="Cidade" class="espaco" required>
+        <input type="text" id="UF" name="UF"  placeholder="UF" required>
       </div>
       {{#if message }}
             <h4 class="alerta">{{message}}</h4>
