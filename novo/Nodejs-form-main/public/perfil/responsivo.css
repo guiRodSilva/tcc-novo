@@ -1,0 +1,143 @@
+@media (max-width:425px){
+
+    header{
+        margin-top: 58px;
+    }
+    img[src="/Imagens/avatar feminino.jpg"]{
+        width: 60px;
+        height: 60px;
+    }
+
+    .nome-perfil{
+        flex-direction: column;
+        top: 70px;
+    }
+    .nome-perfil img[src="/Imagens/avatar feminino.jpg"]{
+        width: 125px;
+        height: 125px;
+        left: 136px;
+        margin-left: 430px;
+        margin-top: -100px;
+    }
+
+    .nome-perfil h1{
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 45px;
+        width: 500px;
+        margin-right: 0px;
+        margin-left: 861px;
+        font-size: 30px;
+    }
+
+    .divisor{
+        margin-right: -240px;
+        margin-left: -100px;
+        margin-top: -50px;
+        margin-bottom: 50px;
+    }
+
+    img[src="/Imagens/imagem.feminina.redonda.png"]{
+        width: 85px;
+        height: 117px;
+        margin-left: -71px;
+        margin-top: -73px;
+    }
+
+    .comentarios .topo h4{
+        margin-top: 0px;
+        margin-right: 16px;
+    }
+
+    .comentarios{
+        width: 90%;
+        margin: auto;
+        padding: 55px;
+        padding-bottom: 355px;
+        padding-left: 230px;
+        padding-right: 131px;
+        margin-left: 34px;
+    }
+
+    .comentarios .topo h3{
+        padding-top: 76px;
+        padding-bottom: 12px;
+        padding-left: 5px;
+        padding-right: 50px;
+        font-size: 20px;
+        padding-top: 5px;
+    }
+
+    .comentarios h5{
+        font-weight: 400;
+        font-size: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 100px;
+    }
+
+   .comentarios .topo{
+        gap:0px;
+        left: 10px;
+   }
+
+    
+   .comentario{
+        justify-content: center;
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+        padding-bottom: 16px;
+        padding-left: 0px;
+        padding-top: 21px;
+        margin-left: -131px;
+}
+
+.comentario h4{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400px;
+        font-size: 14px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.69);
+}
+
+.divisor2{
+        margin-right: -240px;
+        margin-left: -100px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+}
+
+footer img{
+        width: 44px;
+        height: 44px;
+        margin-top: 0px;
+        margin-left: 84px;
+        margin-right: -130px;
+}
+
+footer .footer-container{
+        width: 418px;
+        margin-top: -60px;
+}
+
+.todos{
+       width: 200px;
+}
+
+footer .footer-container .images{
+       margin-right: 200px;
+}
+
+
+footer .footer-container p{
+        margin-top: -5px;
+        font-size: 20px;
+        margin-left: 11px;
+}
+
+}
