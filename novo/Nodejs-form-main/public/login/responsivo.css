@@ -17,6 +17,10 @@
         left: 20px;
     }
 
+    .voltar {
+        opacity: 0;
+    }
+
     .ver-senha {
         right: 50px !important;
     }

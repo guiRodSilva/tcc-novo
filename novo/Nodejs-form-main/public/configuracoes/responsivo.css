@@ -1,12 +1,23 @@
 @media (max-width:425px){
-
-
 .content{   
-  width: 1070px;
+  width: 406px;
+}
+
+.tudo{
+    width: 392px;
+    height: 1162px;
+}
+
+.email_senha{
+    grid-template-columns: repeat(1, 1fr);
+    gap:24px
+
 }
 
 .parte{
-    width: 1000px;
+    width: 304px;
+    margin-top: 50px;
+    margin-right: 49px;;
 }
 .imagem{
     width: 80px;
@@ -14,19 +25,33 @@
     margin-top: 20px;
 }
 
+input{
+    width: 359px;
+    margin-left: 23px !important;
+}
+
 .parte h3{
     font-size: 30px;
     margin-left: 10px;
 
 }
+button.acima{
+    margin-right: 102px;
+}
+
+button.baixo{
+    margin-left: 122px !important;
+    margin-top: 1px;
+}
 
 .text_but{
-    margin-bottom: 70px;
+    margin-bottom: 7px;
 }
 
 .nome{
     width: 370px;
 }
+
 
 
 #email{
@@ -44,11 +69,6 @@
 #end{
     width: 170px;
 }
-
-#cidade{
-    width: 170px;
-}
-
 
 
 }
