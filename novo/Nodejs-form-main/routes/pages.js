@@ -1,16 +1,21 @@
 const express = require('express')
 const router = express.Router()
 const login = require('../controllers/login')
-const { route } = require('./routes')
+const { route, post } = require('./routes')
 const db = require("../database/connection");
+const update = require('../controllers/update')
+
+
 
 router.get("/configuracoes",(req, res) => {
     res.render('configuracoes', {nome: login.useNome})
+    
 
 })
 
 router.get("/perfil",(req, res) => {
     res.render('perfil', {nome: login.useNome2})
+    
 
 })
 
@@ -20,7 +25,7 @@ router.get("/feed",(req, res) => {
 })
 
 router.get('/', (req, res) =>{
-    res.render("home")
+    res.render("home", {aviso: update.aviso})
 })
 
 router.get("/cadastrar", (req, res) => {

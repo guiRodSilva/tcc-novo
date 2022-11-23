@@ -5,6 +5,7 @@ const login = require("../controllers/login")
 const update = require('../controllers/update')
 const sair = require('../controllers/sair')
 
+
 router.post('/cadastrar', cadastrar.cadastrar)
 router.post('/login', login.login)
 router.post('/update', update.update)

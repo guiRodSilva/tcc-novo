@@ -9,7 +9,6 @@ exports.cadastrar = async (req, res) => {
   
    
     let { use_nome, use_email, use_senha, confirmaSenha, rua, numero, bairro, CEP, cidade, UF } = req.body
-
     
 
     db.query('SELECT use_email FROM usuarios WHERE use_email = ?', [use_email], async (error, result) => {
