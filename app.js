@@ -4,6 +4,7 @@ const path = require("path")
 const dotenv = require('dotenv')
 const moment = require('moment')
 const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser')
 
 
 dotenv.config({ path: './env'})
@@ -12,7 +13,7 @@ dotenv.config({ path: './env'})
 const app = express();
 hbs.registerHelper('dateFormat', require('handlebars-dateformat'));
 app.use(cookieParser())
-app.use(express.urlencoded({extended: 'false'}))
+app.use(bodyParser.urlencoded({extended: 'true'}))
 app.use(express.json())
 
 
@@ -27,6 +28,7 @@ const homeDir = path.join(__dirname,'./home')
 const configuracoesDir = path.join(__dirname, './configuracoes')
 const perfilDir = path.join(__dirname, './perfil')
 const feedDir = path.join(__dirname, './feed')
+const noticiaDir = path.join(__dirname, './noticia')
 
 app.use(express.static(publicDir))
 app.use(express.static(homeDir))
@@ -35,6 +37,7 @@ app.use(express.static(loginDir))
 app.use(express.static(cadastrarDir))
 app.use(express.static(perfilDir))
 app.use(express.static(feedDir))
+app.use(express.static(noticiaDir))
 
 const router = require('./routes/routes');
 const pages = require('./routes/pages');

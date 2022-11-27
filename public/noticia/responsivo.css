@@ -1,0 +1,169 @@
+@media (max-width:1920px){
+    .divisor{
+        margin-right: 1524px;
+    }
+}
+
+@media (max-width: 425px){
+    
+    .class {
+        width: 60px;
+        height: 60px;
+    }
+    header input{
+        display: none;
+        visibility: hidden;
+    }
+
+    .fechar-input{
+        display: inherit;
+        visibility: inherit;
+        left: 324px;
+    }
+
+    img[src="/Imagens/Icones/Buscar.svg"]{
+        visibility: visible;
+        display: inherit;
+    }
+    img[src="/Imagens/Icones/Voltar.svg"]{
+        display: none;
+        visibility: hidden;
+        
+    }
+    header{
+        margin-top: 34px;
+        margin-bottom: 59px;
+    }
+
+    .conteudo{
+        border: 1px solid rgba(121, 121, 121, 0.69);
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    section{
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+
+    .titulo h2{
+        font-weight: 400 !important;
+        font-size: 30px !important;
+        line-height: 36px !important;
+        font-weight: bold !important;
+        text-align: center;
+    }
+
+    .img_noticia{
+        width: 364px;
+        height: 273px;
+        margin: 0%;
+    }
+    
+    .noticia p{
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: justify;
+        align-items: center;
+    }
+
+    .nome_data{
+        flex-direction: column;
+        margin-left: -90px;
+    }
+
+    .nome_data h2{
+        margin-top: 0%;
+        margin-left: 60px;
+    }
+
+    .comentar .usuario {
+        width: 48px;
+        height: 42.4px;
+    }
+
+    .comentarios{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .comentar {
+        margin-left: 0%;
+        margin-top: 30px;
+        width: 395px;
+    }
+
+    input{
+        width: 312px;
+        height: 32px;
+    }
+
+    .cancelar{
+        width: 72px;
+        height: 25px;
+        font-size: 14px;
+    }
+
+    .enviar{
+        width: 72px;
+        height: 25px;
+        font-size: 14px;
+    }
+    
+    .comentario{
+        margin-left: 0%;
+        width: 345px;
+    }
+
+    .foto_comentario{
+        width: 45px;
+        height: 45px;
+    }
+
+    .comentarios h3{
+        font-size: 20px;
+    }
+    
+    .comentarios h2{
+        font-size: 12px;
+        margin-top: 0%;
+    }
+
+    .comentario h4{
+        margin-left: 50px;
+        width: 312px;
+        height: 70%;
+        font-size: 18px;
+    }
+
+    .divisor{
+        margin-left: 19%;
+        margin-right: 80.5%;
+        margin-top: 60px;
+    }
+
+    .img_prefe{
+        width: 48px;
+        height: 48px;
+    }
+
+    .prefeitura{
+        margin-left: 49px;
+        width: 345px;
+    }
+    
+    .prefeitura h4{
+        width: 255px;
+        height: 168px;
+    }
+
+    .prefe_nome{
+        flex-direction: column;
+    }
+}
