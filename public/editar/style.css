@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+body{
+    background: #FAFAFA;
+}
+
+img[src="/Imagens/avatar prefeitura.jpg"]{
+    width: 69px;
+    height: 68.32px;
+    margin-left: 25px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 34px;
+    margin-right: 104px;
+    margin-left: 109px;
+    margin-bottom: 19px;
+   
+}
+
+.divisor1{
+    border-bottom: 1px solid rgba(93, 166, 73, 0.75);
+}
+
+.prefeitura-campo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li{
+    font-size: 23px;
+}
+
+.icones-navegacao .selecionado{
+    background: #DEF2D5;
+    border-radius: 20px;
+    color: #1F590F;
+    font-size: 23px;
+    padding: 11px 6px 11px 0px;
+
+}
+
+.icones-navegacao .selecionado li{
+    color: #1F590F;
+    padding-left: 2px;
+
+}
+
+.icones-navegacao ul{
+    display: grid;
+    gap: 77px;
+    flex-direction: column;
+    margin-right: 30px;
+    
+}
+
+.icones-navegacao ul div a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+ 
+}
+
+.icones-navegacao ul div img{
+    width: 32px;
+    height: 32px;
+}
+
+.icones-navegacao li{
+    padding-right: 2px;
+}
+
+.dropdown-toggle::after {
+    content: none !important;
+}
+
+.dropdown-menu {
+    min-width: 15rem !important;
+    --bs-dropdown-border-radius: 20px !important;
+}
+
+.btn{
+    border: none !important;
+}
+
+:root {
+    --bs-link-hover-color: none !important;
+    --bs-link-color: none !important; 
+
+}
+
+a{
+    text-decoration: none !important;
+}
+
+main .conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    margin-top: 71px;
+    margin-left: 80px;
+    margin-bottom: 176px;
+    margin-right: 104px;
+}
+
+.divisor2{
+    border-left: 1px solid rgba(93, 166, 73, 0.75);
+}
+
+
+
+.noticias{
+    margin-left: 30px;
+    display: grid;
+    gap: 77px;
+    flex-direction: column;
+    
+}
+
+.noticias .noticia{
+    display: flex;
+    flex-direction: row;
+}
+
+.noticias .noticia .noticias-texto{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 77px 20px;
+    margin-left: 52px;
+}
+
+.noticias h3{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.noticias p{
+    font-weight: 400;
+    font-size: 23px;
+    margin-top: 23px;
+}
+
+
+a{
+    text-decoration: none !important;
+    color: black;
+}
+
+

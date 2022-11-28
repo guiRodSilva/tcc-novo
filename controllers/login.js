@@ -5,6 +5,8 @@ const { connect } = require("../database/connection");
 const { createConnection } = require("mysql");
 const { promisify } = require("util");
 const { aqueleNome } = require("./update");
+const express = require('express')
+const router = express.Router()
 
 exports.login = async (req, res) => { 
     
@@ -30,9 +32,35 @@ exports.login = async (req, res) => {
                 res.status(401).render('login', {
                     message: 'Email or Password is incorrect'
                 })
-
+            
                 
-            } else {
+            }
+        
+            else if(results[0].use_tipo == 1){
+
+                    const id = results[0].id;
+    
+                    const token = jwt.sign({ id }, process.env.JWT_SECRET, {
+                        expiresIn: process.env.JWT_EXPIRES
+                    });
+    
+                    console.log("the token is " + token);
+    
+                    const cookieOptions = {
+                        expires: new Date(
+                            Date.now() + process.env.COOKIE_EXPIRES * 24 * 60 * 60 * 1000
+                        ),
+                        httpOnly: true
+                    }
+    
+                    res.cookie('userSave', token, cookieOptions);
+                    res.redirect('/editar')
+                    
+                
+
+            }
+
+            else if (results[0].use_tipo == 0) {
                 const id = results[0].id;
 
                 const token = jwt.sign({ id }, process.env.JWT_SECRET, {
@@ -53,6 +81,10 @@ exports.login = async (req, res) => {
                 
                 
             }
+            else{
+                res.render('login', {message: 'deu tudo errado boy'})
+            }
+            
         })
         
     } catch (err) {

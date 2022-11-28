@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar</title>
+    <link rel="shortcut icon" href="/Imagens/logo-redonda.png" type="image/x-icon">
+    <link rel="stylesheet" href="/editar/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="/Imagens/logo-redonda.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <img src="/Imagens/logo-redonda.png" alt="logo">
+
+        <div class="prefeitura-campo">
+             <h3>Prefeitura Municipal de Tupã</h3>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                     <img src="/Imagens/avatar prefeitura.jpg" alt="prefeitura">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="/sair">Sair</a></li>
+                </ul>
+              </div>
+           
+           
+        </div>
+
+        
+    </header>
+
+    <div class="divisor1"></div>
+
+    <main>
+        <div class="conteudo-principal">
+            <div class="icones-navegacao">
+                <ul>
+                    <div>
+                        <a href="/postagens">
+                            <li><img src="/Imagens/Icones/Gerenciamento/Postagens.svg" alt="postagens"></li>
+                            <li>Postagens</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/comentarios">
+                            <li><img src="/Imagens/Icones/Gerenciamento/Comentarios.svg" alt="comentarios"></li>
+                            <li>Comentários</li>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/mensagens">
+                            <li><img src="/Imagens/Icones/Gerenciamento/Mensagens.svg" alt="mensagens"></li>
+                            <li>Mensagens</li>
+                        </a>
+                    </div>
+                    <div class="selecionado">
+                        <a href="/editar">
+                            <li><img src="/Imagens/Icones/Gerenciamento/Editar-post.svg" alt="editar-postagem"></li>
+                            <li>Editar post</li>
+                        </a>
+                    </div>
+                </ul>
+
+            </div>
+            <div class="divisor2"></div>
+    
+            <div class="noticias">
+                {{#each postagens}}
+            <a href="/noticia/{{post_id}}">
+                
+                    
+                    <img src="{{img_nome}}" alt="">
+                    
+                    <h1>{{post_titulo}}</h1> 
+                    Conteudo: {{post_conteudo}}<br>
+                    Data: 	{{{dateFormat post_data "DD/MM/YYYY"}}}<br>
+                    <br>
+                    <hr>
+                {{/each}}
+        </div>
+</main>
+</body>
+</html>

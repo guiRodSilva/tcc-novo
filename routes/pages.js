@@ -78,6 +78,33 @@ router.post('/comentar', (req, res)=>{
     })
 })
 
+router.get("/editar", (req, res) => {
+    db.query('SELECT postagens.post_id, post_data, post_titulo, post_conteudo, post_destaque, img_nome FROM postagens INNER JOIN imagens ON postagens.post_id = imagens.post_id', async (err, results) => {
+        res.render('editar', 
+        {postagens: results})
+    })
+
+})
+
+router.get("/comentarios", (req, res) => {
+    db.query('SELECT * FROM comentarios', async (err, results) => {
+        res.render('comentarios', 
+        {comentarios: results})
+    })
+
+})
+
+router.get("/postagens", (req, res) => {
+    res.render('postagens')
+
+})
+
+router.get("/mensagens", (req, res) => {
+    res.render('mensagens')
+
+})
+
+
 
 module.exports = router
 

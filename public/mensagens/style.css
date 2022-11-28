@@ -1,0 +1,425 @@
+.dropdown-toggle::after {
+    content: none !important;
+}
+
+.dropdown-menu {
+    min-width: 15rem !important;
+    --bs-dropdown-border-radius: 20px !important;
+}
+
+.btn{
+    border: none !important;
+}
+
+:root {
+    --bs-link-hover-color: none !important;
+    --bs-link-color: none !important; 
+
+}
+
+a{
+    text-decoration: none !important;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+}
+
+img[src="/Imagens/avatar prefeitura.jpg"]{
+    width: 69px;
+    height: 69px;
+}
+
+body {
+    background: #FAFAFA !important;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 34px;
+    margin-right: 104px;
+    margin-left: 109px;
+    margin-bottom: 19px;
+}
+
+header .usuario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.divisor1 {
+    border-bottom: 1px solid rgba(93, 166, 73, 0.75);
+}
+
+.divisor2 {
+    border-bottom: 1px solid rgba(93, 166, 73, 0.75);
+}
+
+.divisor3 {
+    border-bottom: 1px solid rgba(93, 166, 73, 0.75);
+  
+}
+
+.divisor4 {
+    border-bottom: 1px solid rgba(93, 166, 73, 0.75);
+    
+}
+
+.divisores {
+    display: flex;
+    flex-direction: flex;
+}
+
+.tudo{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin-left: 120px;
+}
+
+.chat {
+    margin-left: 27px;
+    margin-top: 28px;
+    margin-right: 15px;
+}
+
+.prefeiturachat {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 100px;
+
+}
+
+.textochato {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #B9B7B7;
+    margin-right: 9px;
+    padding-top: 15px;
+    border-radius: 20px;
+    width: 85px;
+    height: 37px;
+
+}
+
+.textochato h5{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #797979;
+    margin-left: 5px;
+}
+
+.texto1mulher {
+    background-color: #B9B7B7;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    align-items: flex-end;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-right: 18px;
+                     
+}
+
+.mulherchat h5{
+    margin-left: 8px;
+    color: #797979;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.texto2mulher {
+    background-color: #B9B7B7;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    align-items: flex-end;
+    width: 400px;
+    margin-left: 75px;
+    padding-left: 20px;
+    padding-right: 18px;
+    padding-top: 15px;
+}
+
+.prefeiturachat h4 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.prefeiturachat h5 {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.mulherchat {
+    display: flex;
+    flex-direction: column;
+}
+
+.mulherchatb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mulherchatb img {
+    margin-left: 20px;
+    width: 66px !important;
+    height: 66px !important;
+}
+
+.conversa-chat h4 {
+    display: flex;
+    justify-content: center;
+}
+
+.carolado{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    background: #DEF2D5;
+    border: none;
+    width: 295px;
+    height: 60px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.carolzinhagrande {
+    display: flex;
+    flex-direction: row;
+}
+
+.textocarol {
+    flex-direction: column;
+    margin-left: 8px;
+}
+
+.gongas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+
+
+}
+
+.gongastexto {
+    margin-left: 8px;
+}
+
+.aleatorio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.texto1 {
+    margin-left: 8px;
+}
+
+.aleatorio2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.texto2 {
+    margin-left: 8px;
+}
+
+.aleatorio3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.luanatexto {
+    margin-left: 8px;
+}
+
+.conversa-chat {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 580px;
+}
+
+.enviar input {
+    background: #DEF2D5;
+    border: none;
+    width: 650px;
+    margin-left: 14px;
+    margin-top: 23px;
+    margin-bottom: 15px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    padding-right: 110px;
+}
+
+.enviar img {
+    position: relative;
+    right: 100px;
+}
+
+
+.pref_principal{
+    width: 69px;
+    margin-left: 25px;
+    height: 68.32px;
+
+}
+
+img[src="/Imagens/Foto usuário 1.png"] {
+    width: 47px;
+    margin-left: 10px;
+    height: 47px;
+
+}
+
+img[src="/Imagens/avatrar vilmar gongas.png"] {
+    width: 47px;
+    margin-left: 20px;
+    height: 47px;
+}
+
+img[src="/Imagens/avatar aleatorio.png"] {
+    width: 47px;
+    margin-left: 20px;
+    height: 47px;
+}
+
+img[src="/Imagens/avatar aleatorio2.png"] {
+    width: 47px;
+    margin-left: 20px;
+    height: 47px;
+}
+
+img[src="/Imagens/avatar aleatorio3.png"] {
+    width: 47px;
+    margin-left: 20px;
+    height: 47px;
+}
+
+.pref_mensagens {
+    width: 69px;
+    height: 68.32px;
+
+}
+
+.icones-navegacao .selecionado {
+    background: #DEF2D5;
+    border-radius: 20px;
+    color: #1F590F;
+    font-size: 23px;
+    padding: 11px 6px 11px 6px;
+
+}
+
+.icones-navegacao .selecionado li {
+    color: #1F590F;
+    padding-left: 2px;
+
+}
+
+.icones-navegacao ul {
+    display: grid;
+    gap: 77px;
+    flex-direction: column;
+    margin-right: 30px;
+
+}
+
+.icones-navegacao ul div a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+
+
+}
+
+.icones-navegacao ul div img {
+    width: 32px;
+    height: 32px;
+}
+
+.icones-navegacao li {
+    padding-right: 2px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    margin-top: 71px;
+    margin-left: 80px;
+    margin-bottom: 176px;
+    margin-right: 104px;
+}
+
+.divisor2 {
+    border-left: 1px solid rgba(93, 166, 73, 0.75);
+}
+
+.divisor3 {
+    border-left: 1px solid rgba(93, 166, 73, 0.75);
+    margin-top: 72px;
+    margin-bottom: 15px;
+}
+
+.input {
+    width: 300px
+}
+
+
+.coisas {
+    margin-top: 80%;
+    display: flex;
+    align-items: center;
+
+}
+
+.check {
+    margin-right: 250px;
+    display: flex;
+
+
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li {
+    font-size: 23px;
+}
