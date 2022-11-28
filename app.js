@@ -28,6 +28,8 @@ const editarDir = path.join(__dirname, './editar')
 const comentariosDir = path.join(__dirname, './comentarios')
 const postagensDir = path.join(__dirname, './postagens')
 const mensagensDir = path.join(__dirname, './mensagens')
+const editar_dentroDir = path.join(__dirname, './editar-dentro')
+const comentario_dentroDir = path.join(__dirname, './comentario-dentro')
 
 app.use(express.static(publicDir))
 app.use(express.static(homeDir))
@@ -41,6 +43,8 @@ app.use(express.static(editarDir))
 app.use(express.static(comentariosDir))
 app.use(express.static(postagensDir))
 app.use(express.static(mensagensDir))
+app.use(express.static(editar_dentroDir))
+app.use(express.static(comentario_dentroDir))
 
 const router = require('./routes/routes');
 const pages = require('./routes/pages');

@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+body{
+    background: #FAFAFA;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 34px;
+    margin-right: 104px;
+    margin-left: 109px;
+    margin-bottom: 19px;
+}
+
+header .usuario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.usuario p{
+    padding-top: 14px;
+}
+
+img[src="/Imagens/avatar prefeitura.jpg"]{
+    width: 69px;
+    height: 68.32px;
+    margin-left: 25px;
+}
+
+.divisor1{
+    border-bottom: 1px solid rgba(93, 166, 73, 0.75);
+}
+
+main .conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    margin-top: 71px;
+    margin-left: 50px;
+    margin-bottom: 176px;
+    margin-right: 90%;
+}
+
+img[src="/Imagens/imagens noticiais/recii.jpg" ]{
+  width: 980px;
+  height: 700px;
+  left: 348px;
+  border-radius: 20px;
+}
+
+
+
+ul li{
+    list-style: none;
+}
+
+ul li{
+    font-size: 23px;
+}
+
+
+.icones-navegacao .selecionado{
+    background: #DEF2D5;
+    border-radius: 20px;
+    color: #1F590F;
+    font-size: 23px;
+    padding: 11px 6px 11px 6px;
+
+}
+
+.icones-navegacao .selecionado li{
+    color: #1F590F;
+    padding-left: 2px;
+
+}
+
+.icones-navegacao ul{
+    display: grid;
+    gap: 77px;
+    flex-direction: column;
+    margin-right: 30px;
+    
+}
+
+.icones-navegacao ul div a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+.icones-navegacao ul div img{
+    width: 32px;
+    height: 32px;
+}
+
+.icones-navegacao li{
+    padding-right: 4px;
+}
+
+.icones-navegacao{
+    padding-top: 10px;
+}
+
+
+.divisor2{
+    border-left: 1px solid rgba(93, 166, 73, 0.75);
+    margin-bottom: 72px;
+}
+
+.conteudo_principal{
+    display: flex;
+    flex-direction: row;
+    margin-top: 71px;
+}
+
+h3{
+    font-family: 'inter';
+    font-size: 50px !important;
+    text-decoration: none !important;
+    color: black;
+    font-weight: 900 !important;
+
+}
+
+.txt_noticia p{
+    font-weight: 500;
+    font-size: 30px;
+    text-align: justify; 
+}
+
+section{
+    margin-left: 120px;
+}
+
+.coisas{
+    margin-top: 5px;
+    margin-bottom: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.check{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    accent-color: #1F590F;
+   
+}
+
+.check label{
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.botao{
+    height: 60px;
+    margin-left: 100px;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 34px 6px 34px; 
+    margin-top: 0px;
+    background: #DEF2D5;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-family: 'inter';
+    
+}
+
+.check input{
+    width: 31px;
+    height: 31px;
+
+}
+
+label{
+    font-family: 'inter';
+    font-size: 20px;
+}

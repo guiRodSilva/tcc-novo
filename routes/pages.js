@@ -87,7 +87,7 @@ router.get("/editar", (req, res) => {
 })
 
 router.get("/comentarios", (req, res) => {
-    db.query('SELECT * FROM comentarios', async (err, results) => {
+    db.query('SELECT coment_id, coment_texto, use_nome FROM comentarios INNER JOIN usuarios ON comentarios.use_id = usuarios.use_id', async (err, results) => {
         res.render('comentarios', 
         {comentarios: results})
     })
@@ -101,6 +101,25 @@ router.get("/postagens", (req, res) => {
 
 router.get("/mensagens", (req, res) => {
     res.render('mensagens')
+
+})
+router.get("/editar-dentro/:post_id", (req, res) => {
+    const post_id = req.params.post_id
+    db.query('SELECT post_data, post_titulo, post_conteudo, img_nome FROM postagens INNER JOIN imagens ON postagens.post_id = imagens.post_id WHERE postagens.post_id = ?;',[post_id], async (err, results) => {
+        res.render('editar-dentro', 
+        {conteudo: results})
+    })
+    
+
+})
+
+router.get("/comentario-dentro/:coment_id", (req, res) => {
+    const coment_id = req.params.coment_id
+    db.query('SELECT coment_id, coment_texto, use_nome FROM comentarios INNER JOIN usuarios ON comentarios.use_id = usuarios.use_id WHERE coment_id = ?',[coment_id], async (err, results) => {
+        res.render('comentario-dentro', 
+        {comentarios_dentro: results})
+    })
+    
 
 })
 

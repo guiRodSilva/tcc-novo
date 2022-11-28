@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+body{
+    background: #FAFAFA;
+}
+
+img[src="/Imagens/avatar prefeitura.jpg"]{
+    width: 69px;
+    height: 68.32px;
+    margin-left: 25px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 34px;
+    margin-right: 104px;
+    margin-left: 109px;
+    margin-bottom: 19px;
+}
+
+a{
+    text-decoration: none !important;
+    color: black;
+}
+
+
+.divisor1{
+    border-bottom: 1px solid rgba(93, 166, 73, 0.75);
+}
+
+.prefeitura{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+
+.lado-esquerdo{
+    margin-left: 80px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 23px;
+}
+
+.lado-esquerdo ul{
+    display: grid;
+    gap: 77px;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.lado-esquerdo ul div a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.lado-esquerdo ul div img{
+    width: 32px;
+    height: 32px;
+}
+
+.lado-esquerdo li{
+    padding-right: 2px;
+}
+
+.lado-esquerdo .selecionado{
+    background: #DEF2D5;
+    border-radius: 20px;
+    color: #1F590F;
+    font-size: 23px;
+    padding: 11px 6px 11px 0px;
+    text-decoration-color: #1F590F;
+}
+
+.principal{
+    display: flex;
+    flex-direction: row;
+    margin-top: 71px;
+}
+
+.divisor2{
+    border-right: 1px solid rgba(93, 166, 73, 0.75);
+    margin-bottom: 72px;
+}
+
+.lado-direito{
+    background-color: #FFFFFF;
+    margin-top: 44px;
+    margin-bottom: 79px;
+    margin-left: 22px;
+    margin-right: 104px;
+}
+
+
+.imagem-escrita{
+    display:flex;
+    flex-direction: row;
+}
+
+img[src="/Imagens/avatrar vilmar gongas.png"]{
+    width: 114px;
+    height: 114px;
+    margin-top: 98px;
+    margin-bottom: 41px;
+    margin-left: 61px;
+    margin-right: 11px;
+}
+
+.escrita{
+    display:flex;
+    flex-direction: row;
+}
+
+.escrita h3{
+    /*position: absolute;
+    width: 207px;
+    height: 44px;
+    left: 539px;
+    top: 317px;*/
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.69);
+    margin-top: 140px;
+    margin-bottom: 69px;
+    margin-right: 255px;
+    margin-left: 11px;
+}
+
+.escrita h4{
+    /*position: absolute;
+    width: 207px;
+    height: 41px;
+    left: 1001px;
+    top: 317px;*/
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.69);
+    margin-top: 140px;
+    margin-bottom: 72px;
+    margin-right: 54px;
+    margin-left: 255px;
+}
+
+.quadrado{
+
+    background: #D9D9D9;
+    border-radius: 20px;
+    padding-top: 253px;
+    margin-bottom: 24px;
+    margin-left: 70px;
+    margin-right: 54px;
+    padding-bottom: 300px;
+}
+
+.aprovar-recusar{
+    display:flex;
+    flex-direction: row;
+    margin-left: 70px;
+}
+
+input[type="submit"]{
+    width: 151px;
+    height: 41px;
+    left: 423px;
+    top: 983px;
+    background: #DEF2D5;
+    border-radius: 20px;
+    border:none;
+}
+
+.aprovar{
+    margin-right: 28px;
+    margin-bottom: 181px;
+}
