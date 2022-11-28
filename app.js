@@ -5,10 +5,12 @@ const dotenv = require('dotenv')
 const moment = require('moment')
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser')
+const fileUpload = require('express-fileupload')
 dotenv.config({ path: './env'})
 
 
 const app = express();
+app.use(fileUpload())
 hbs.registerHelper('dateFormat', require('handlebars-dateformat'));
 app.use(cookieParser())
 app.use(bodyParser.urlencoded({extended: 'true'}))

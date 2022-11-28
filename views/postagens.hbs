@@ -73,11 +73,13 @@
                     <input type="text" placeholder="Título" class="titulo"> </input>
                     <div class="form-input">
 
-                    
-                        <div class="preview">
-                            <img id="file-ip-1-preview">
-                        </div>
-                        <input type="file" title="" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+                        <form action="/cadGerenciamento" method="POST" enctype="multipart/form-data">
+                            <div class="preview">
+                                <img id="file-ip-1-preview">
+                            </div>
+                            <input type="file" title="" name="sampleFile" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+                            <input type="submit">
+                        </form>
                     </div>    
                 <!-- <div class="vazio"> 
                     <input placeholder="Imagem"> </input>

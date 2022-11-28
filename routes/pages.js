@@ -11,6 +11,10 @@ const e = require('express');
 
 
 router.get("/configuracoes",(req, res) => {
+    db.query('SELECT postagens.post_id, post_data, post_titulo, post_conteudo, img_nome FROM postagens INNER JOIN imagens ON postagens.post_id = imagens.post_id WHERE post_destaque = 1', async (err, results) => {
+        exports.fixado = results
+    
+    })
     res.render('configuracoes', {nome: login.useNome})
     
 
