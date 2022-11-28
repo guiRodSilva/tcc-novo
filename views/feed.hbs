@@ -57,8 +57,19 @@
 
     </header>
     <div class="feed-container">
-    
-        <div class="principal-noticia">
+        {{#each pinned}}
+            <a href="/noticia/{{post_id}}">
+                
+                    
+                    <img src="{{img_nome}}" alt="">
+                    <h1>{{post_titulo}}</h1> 
+                    Conteudo: {{post_conteudo}}<br>
+                    
+                    <br>
+                    <hr>
+                {{/each}}
+        
+        {{!-- <div class="principal-noticia">
 
             <a href="/Programação/Visao Usuario/Camila/notícia/noticia.html">
             <div class="noticia-top1">
@@ -84,14 +95,15 @@
                 <img src="/Imagens/Imagem-top2.png" alt="top2">
             </div>
         </div>
-    </a>
+    </a> --}}
 
         <div class="outras-noticias">
             {{#each postagens}}
-            <a href="/noticia/{{post_titulo}}">
+            <a href="/noticia/{{post_id}}">
                 
                     
                     <img src="{{img_nome}}" alt="">
+                    
                     <h1>{{post_titulo}}</h1> 
                     Conteudo: {{post_conteudo}}<br>
                     Data: 	{{{dateFormat post_data "DD/MM/YYYY"}}}<br>

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Como reciclar corretamente</title>
     <link rel="shortcut icon" href="/Imagens/logo-redonda.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsivo.css">
+    <link rel="stylesheet" href="/noticia/style.css">
+    <link rel="stylesheet" href="/noticia/responsivo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
@@ -67,16 +67,22 @@
 </section>
     <div class="comentarios">
     <div class="comentar">
-            <img src="/Imagens/avatar feminino.jpg" alt="imagem-usuario" class="usuario"> 
-            <input type="text" id="coment" name="coment" value="" placeholder="Adicione um comentário">
-    
-        <div class="botao">
-            <button type="submit" class="cancelar"> Cancelar </button>
-            <button type="submit" class="enviar"> Enviar </button>
-        </div>
+        <img src="/Imagens/avatar feminino.jpg" alt="imagem-usuario" class="usuario"> 
+        <form action="/comentar" method="POST">
+            <input type="text" id="coment" name="coment" placeholder="Adicione um comentário">
+            <button type="submit" value="Enviar"> Enviar </button>
+    </form>
     </div>
     <div class="comentario">
-        <div class="nome_data">
+
+        {{#each comentarios}}     
+        <h1>{{coment_texto}}</h1> 
+        <hr>
+    {{/each}}
+
+            </a>
+
+        {{!-- <div class="nome_data">
             <div >
                 <img src="/Imagens/avatrar vilmar gongas.png" alt="Vilmar gongas" class="foto_comentario">
                 <h3> Vilmar Gongas </h3>
@@ -92,7 +98,7 @@
             
                 <button type="submit" class="deslike">  <img src="/Imagens/Icones/Deslike.svg" alt="deslike"> </button> <p class="num"> 1 </p>
             </div>
-        </div>
+        </div> --}}
     </div>
     <div class="divisor"></div>
     <div class="prefeitura">

@@ -7,6 +7,7 @@ const sair = require('../controllers/sair')
 const pesquisar = require('../controllers/pesquisar')
 
 
+
 router.post('/cadastrar', cadastrar.cadastrar)
 router.post('/login', login.login)
 router.post('/update', update.update)
