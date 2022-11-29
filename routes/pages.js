@@ -15,7 +15,7 @@ router.get("/configuracoes",(req, res) => {
         exports.fixado = results
     
     })
-    res.render('configuracoes', {nome: login.useNome})
+    res.render('configuracoes', {nome: login.useNome2})
     
 
 })
@@ -61,10 +61,11 @@ router.get("/pesquisa", (req, res) => {
 
 router.get("/noticia/:post_id", (req, res) => {
     exports.post_id = req.params.post_id
-    db.query('SELECT post_data, post_titulo, post_conteudo, img_nome FROM postagens INNER JOIN imagens ON postagens.post_id = imagens.post_id WHERE postagens.post_id = ?;',[this.post_id], async (err, results) => {
-        db.query('SELECT coment_texto FROM comentarios;',[this.post_id], async (err, results) => {
-            exports.comentarios = results
-        })
+    db.query('SELECT coment_texto FROM comentarios WHERE post_id = ?;',[this.post_id], async (err, results) => {
+        exports.comentarios = results
+    })
+
+    db.query('SELECT postagens.post_id, post_data, post_titulo, post_conteudo, img_nome FROM postagens INNER JOIN imagens ON postagens.post_id = imagens.post_id WHERE postagens.post_id = ?;',[this.post_id], async (err, results) => {
         res.render('noticia', 
         {conteudo: results, comentarios: this.comentarios})
     })
@@ -75,10 +76,10 @@ router.get("/noticia/:post_id", (req, res) => {
 
 router.post('/comentar', (req, res)=>{
     const {coment} = req.body
-    db.query('INSERT INTO comentarios (use_id, coment_texto, post_id, coment_pre_resposta, coment_status, coment_moderacao) VALUES (5,?,?,?,1,1)',[coment, this.post_id, ''],  async (err, results) => {
+    db.query('INSERT INTO comentarios (use_id, coment_texto, post_id, coment_pre_resposta, coment_status, coment_moderacao) VALUES (7,?,?,?,1,1)',[coment, this.post_id, ''],  async (err, results) => {
         console.log(err)
         console.log(this.post_id)
-        res.render('noticia', {message:'Deu bom'})   
+        res.render('noticia', {message:'Deu bom'})  
     })
 })
 

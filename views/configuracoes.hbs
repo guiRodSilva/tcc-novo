@@ -62,10 +62,8 @@
         <div>
             <div class="text_but" >
 
-
-               {{#if nome }}
-            <h3 class="nome-usuario">{{nome}}</h3>
-            {{/if}}
+            {{nome}}
+    
              <button class="acima" type="button">Mudar foto</button>
            </div>
         </div>
@@ -74,7 +72,7 @@
 
         <form action="/update" method="POST">
             <div class="email_senha">
-                <input type="text" id="use_nome" name="use_nome" placeholder="Nome" value="{{}}">
+                <input type="text" id="use_nome" name="use_nome" placeholder="Nome" >
                 <input type="email" id="use_email" name="use_email" placeholder="Email" >
             </div>
             <div class="email_senha"> 

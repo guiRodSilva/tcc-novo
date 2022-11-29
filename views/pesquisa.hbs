@@ -59,11 +59,10 @@
     </header>
     
     {{#each results}}
-                <img src="{{img_nome}}" alt="imagem">
+                <img src="/Imagens/{{img_nome}}" alt="imagem">
                 <h1>{{post_titulo}}</h1> 
                 Conteudo: {{post_conteudo}}<br>
                 Data: 	{{{dateFormat post_data "DD/MM/YYYY"}}}<br>
-                
                 <br>
                 <hr>
             {{/each}}

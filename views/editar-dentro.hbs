@@ -63,9 +63,9 @@
             <div class="divisor2"></div>
 
              {{#each conteudo}}
-                    <img src="{{img_nome}}" alt="">
-                    <h1>{{post_titulo}}</h1> 
-                    Conteudo: {{post_conteudo}}<br>
+                    <img src="/Imagens/{{img_nome}}" alt="">
+                    <input type="text" name="post_titulo" value="{{post_titulo}}">
+                    <input type="text" name="post_conteudo" value="{{post_conteudo}}">
                     Data: 	{{{dateFormat post_data "DD/MM/YYYY"}}}<br>
                     <br>
                     <hr>

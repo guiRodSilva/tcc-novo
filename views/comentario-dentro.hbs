@@ -59,9 +59,12 @@
 <div class="lado-direito">
 
     {{#each comentarios_dentro}} 
-            <h1>{{use_nome}}</h1> 
-            <h1>{{coment_texto}}</h1> 
+        <h1>{{use_nome}}</h1> 
+          <input type="text" name="coment_texto" value="{{coment_texto}}"> 
             <hr>
+
+            <button type="submit">Aprovar</button>
+            <button type="submit">Reprovar</button>
        {{/each}}
 
 

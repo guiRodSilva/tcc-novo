@@ -10,7 +10,7 @@ exports.cadGerenciamento = async(req, res) =>{
     }
 
     else{
-        destaque = 0;
+        destaque = 1;
     }
     db.beginTransaction(err => {
         if (err) {
@@ -20,7 +20,7 @@ exports.cadGerenciamento = async(req, res) =>{
         }
         
         return db.query(
-            'INSERT INTO postagens (post_data ,post_titulo, post_conteudo, post_destaque, post_ativo, pre_id) VALUES (?,?,?, ?, 1, 1)', [new Date(), titulo, texto, destaque], async (err) => {
+            'INSERT INTO postagens (post_data ,post_titulo, post_conteudo, post_destaque, post_ativo, pre_id) VALUES (?,?,?, ?, 1, 6)', [new Date(), titulo, texto, destaque], async (err) => {
 
                 if (err) {
                     return db.rollback(() => {
