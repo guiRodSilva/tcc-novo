@@ -134,29 +134,11 @@ ul li{
     /* padding-left: 1035px; */
 }
 
-.titulo h3{
-    /* position: absolute;
-    width: 360px;
-    height: 29px;
-    left: 416px;
-    top: 257px; */
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 30px;
-    color: #525252;
-    /*padding-top: 72px;
-    padding-left: 18px;
-    padding-right: 454px;
-    padding-bottom: 420px;*/
 
-}
 
 .titulo{
  border-radius: 20px;
  margin-left: 37px;
- margin-top: 60px;
  margin-right: 40px;
  padding-right: 10px;
  padding-left: 10px;
@@ -164,9 +146,8 @@ ul li{
  padding-bottom: 20px;
  background: #FFFFFF;
  border: none;
- overflow-wrap: break-word;
-word-wrap: break-word;
-word-break: break-word;
+ width: 90%;
+ font-size: 20px;
 
 }
 
@@ -174,6 +155,12 @@ word-break: break-word;
     margin-top: 40px;
     margin-left: 40px;
     margin-bottom: 40px;
+    
+}
+
+.form-input input{
+    margin-left: 436px;
+    margin-top: 20px;
 }
 
 .form-input input{
@@ -190,23 +177,6 @@ word-break: break-word;
     width: 500px;
     height: 500px;
     border-radius: 5px;
-}
-
-
-
-
-.vazio input{
-    border-radius: 20px;
-    margin-left: 37px;
-    margin-top: 115px;
-    padding-right: 798px;
-    padding-top: 20px;
-    background: #FFFFFF;
-    border: none;
-    /*padding-top: 324px;*/
-    padding-bottom: 400px;
-    margin-bottom: 20px;
-
 }
 
 img[src="/Imagens/Icones/Gerenciamento/imagemcinza.png"]{
@@ -229,29 +199,11 @@ img[src="/Imagens/Icones/Gerenciamento/imagemcinza.png"]{
     background: #FFFFFF;
     border: none;
     padding-bottom: 400px;
+    font-size: 20px;
+    width: 90%;
 
 }
 
-
-.texto h3{
-    /*position: absolute;
-    height: 27px;
-    left: 415px;
-    top: 706px;*/
-
-    width: 237px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 30px;
-    color: #525252;
-    /*padding-top: 72px;
-    padding-left: 55px;
-    padding-right: 618px;
-    padding-bottom: 381px;*/
-    
-}
 
 .checkbox{
     display: flex;
@@ -324,9 +276,7 @@ a{
     background-color: #DEF2D5;
     border-radius: 20px;
     padding-top: 60px;
-    /* margin-right: 96px; */
-    width: 1500px;
-    height: 1446px;
+    
     padding-right: 37px;
     padding-left: 37px;
 

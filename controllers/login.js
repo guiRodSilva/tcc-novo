@@ -30,7 +30,7 @@ exports.login = async (req, res) => {
             exports.useId4 = results[0].use_id
             if (!results || !await bcrypt.compare(use_senha, results[0].use_senha)) {
                 res.status(401).render('login', {
-                    message: 'Email or Password is incorrect'
+                    message: 'Email ou senha incorretos'
                 })
             
                 

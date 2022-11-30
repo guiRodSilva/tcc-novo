@@ -1,0 +1,34 @@
+@media (max-width:425px){
+
+img[src="/Imagens/avatar feminino.jpg"] {
+    width: 50px;
+    height: 50px;
+}
+    
+img[src="/Imagens/Icones/GPS.svg"]{
+    width: 40px;
+    height: 40px;
+}
+
+img[src="/Imagens/Icones/Mensagem.svg"]{
+    width: 35px;
+    height: 35px;
+}
+
+.titulo{
+    flex-direction: column;
+    margin-left: 60px;
+    margin-right: 60px;
+    align-items: center;
+}
+
+.gps{
+    padding-left: 95px;
+    padding-right: 235px;
+    margin-left: 46px;
+    margin-right: 39px;
+    margin-top: 36px;
+    font-size: 70px;
+}
+
+}

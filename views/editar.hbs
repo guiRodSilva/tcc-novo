@@ -77,16 +77,16 @@
             <div class="noticias">
                 {{#each postagens}}
             <a href="/editar-dentro/{{post_id}}">
-                
-                    
-                    <img src="/Imagens/{{img_nome}}" alt="">
-                    
-                    <h1>{{post_titulo}}</h1> 
-                    Conteudo: {{post_conteudo}}<br>
-                    Data: 	{{{dateFormat post_data "DD/MM/YYYY"}}}<br>
-                    <br>
-                    <hr>
+                    <div class="noticia">
+                        <img src="/Imagens/{{img_nome}}" alt="">
+                        <div class="noticias-texto">
+                            <h3>{{post_titulo}}</h3> 
+                            <p>{{post_conteudo}}</p>
+                           
+                        </div>
+                </div>
                 {{/each}}
+                
         </div>
 </main>
 </body>

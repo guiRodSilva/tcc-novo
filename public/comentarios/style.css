@@ -132,7 +132,11 @@ h2{
     font-size: 40px;
     line-height: 48px;
     text-align: center; 
-    margin-bottom: 53px;   
+    margin-bottom: 70px !important;   
+}
+
+h1{
+    margin-right: 650px;
 }
 
 a{
@@ -175,25 +179,11 @@ a{
   }
 
 .comentario_novo{
+    display: flex;
+    justify-content: space-between;
     font-family: 'Inter';
     font-size: 30px;
+
     color: #585858;
 }
 
-.comentario_novo a{
-    color: #585858;
-}
-
-.nomes{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: white;
-    width: 866px;
-    margin-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 23px;
-    padding-bottom: 16px;
-    border-radius: 20px;
-}

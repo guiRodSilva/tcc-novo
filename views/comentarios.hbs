@@ -66,12 +66,15 @@
 
     <div class="divisor2"></div>
     <div class="comentarios"> 
+        <h2> Novos comentários:</h2>
         {{#each comentarios}} 
         <a href="/comentario-dentro/{{coment_id}}"> 
+        <div class="comentario_novo">
             <h1>{{use_nome}}</h1> 
-            <h1>{{coment_texto}}</h1> 
-            <hr>
+            <p>11/09/2022</p>
+        </div>
         </a>   
+        <hr>
         {{/each}}
     </div>
 </div>

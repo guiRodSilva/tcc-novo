@@ -1,3 +1,26 @@
+.dropdown-toggle::after {
+    content: none !important;
+}
+
+.dropdown-menu {
+    min-width: 15rem !important;
+    --bs-dropdown-border-radius: 20px !important;
+}
+
+.btn{
+    border: none !important;
+}
+
+:root {
+    --bs-link-hover-color: none !important;
+    --bs-link-color: none !important; 
+
+}
+
+a{
+    text-decoration: none !important;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -92,11 +115,10 @@ ul li{
 
 .divisor2{
     border-right: 1px solid rgba(93, 166, 73, 0.75);
-    margin-bottom: 72px;
+
 }
 
 .lado-direito{
-    background-color: #FFFFFF;
     margin-top: 44px;
     margin-bottom: 79px;
     margin-left: 22px;
@@ -112,7 +134,7 @@ ul li{
 img[src="/Imagens/avatrar vilmar gongas.png"]{
     width: 114px;
     height: 114px;
-    margin-top: 98px;
+
     margin-bottom: 41px;
     margin-left: 61px;
     margin-right: 11px;
@@ -137,7 +159,7 @@ img[src="/Imagens/avatrar vilmar gongas.png"]{
     line-height: 36px;
     text-align: center;
     color: rgba(0, 0, 0, 0.69);
-    margin-top: 140px;
+    margin-top: 38px;
     margin-bottom: 69px;
     margin-right: 255px;
     margin-left: 11px;
@@ -157,7 +179,7 @@ img[src="/Imagens/avatrar vilmar gongas.png"]{
     line-height: 36px;
     text-align: center;
     color: rgba(0, 0, 0, 0.69);
-    margin-top: 140px;
+    margin-top: 38px;
     margin-bottom: 72px;
     margin-right: 54px;
     margin-left: 255px;
@@ -177,14 +199,25 @@ img[src="/Imagens/avatrar vilmar gongas.png"]{
 .aprovar-recusar{
     display:flex;
     flex-direction: row;
-    margin-left: 70px;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 38px;
+}
+
+.conteudo{
+    margin-left: 61px;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-size: 20px;
+    padding-left: 20px;
+    width: 90%;
+    height: 50px
 }
 
 input[type="submit"]{
     width: 151px;
     height: 41px;
-    left: 423px;
-    top: 983px;
+    font-size: 20px;
     background: #DEF2D5;
     border-radius: 20px;
     border:none;

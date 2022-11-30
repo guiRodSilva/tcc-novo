@@ -37,8 +37,8 @@
                 </a>
             </div>
             
-            <a href="/Programação/Visao Usuario/Isabela/mensagem/mensagem.html"> <img src="/Imagens/Icones/Mensagem.svg" alt="Mensagem"></a>
-            <a href="/Programação/Visao Usuario/Isabela/gps/gps.html"> <img src="/Imagens/Icones/GPS.svg" alt="GPS"></a>
+            <a href="/chat"> <img src="/Imagens/Icones/Mensagem.svg" alt="Mensagem"></a>
+            <a href="/gps"> <img src="/Imagens/Icones/GPS.svg" alt="GPS"></a>
             <div class="dropdown">
                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="/Imagens/avatar feminino.jpg" alt="avatar">
@@ -57,17 +57,25 @@
 
     </header>
     <div class="feed-container">
+        <div class="principal-noticia">
         {{#each pinned}}
-            <a href="/noticia/{{post_id}}">
+          <a href="/noticia/{{post_id}}">
+            
+          
                 
+                    <div class="noticia">
+                        <div class="texto-noticia{{post_id}}">
+                            <h3>{{post_titulo}}</h3> 
+                            <p>{{post_conteudo}}</p> 
+                        </div>
+                        
+                        <img src="/Imagens/{{img_nome}}" alt="">
+                </div>
+          
                     
-                    <img src="/Imagens/{{img_nome}}" alt="">
-                    <h1>{{post_titulo}}</h1> 
-                    Conteudo: {{post_conteudo}}<br>
-                    
-                    <br>
-                    <hr>
+            </a>
                 {{/each}}
+            </div>
         
         {{!-- <div class="principal-noticia">
 

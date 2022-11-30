@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter";
+}
+
+body{
+    background-color: #FAFAFA;
+}
+
+.dropdown-toggle::after {
+    content: none !important;
+
+}
+
+.dropdown-menu {
+    min-width: 15rem !important;
+    --bs-dropdown-border-radius: 20px !important;
+}
+
+
+.btn{
+    border: none !important;
+}
+
+:root {
+    --bs-link-hover-color: none !important;
+    --bs-link-color: none !important; 
+
+}
+
+a{
+    text-decoration: none !important;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+    margin-top: 34px;
+}
+
+img[src="/Imagens/avatar feminino.jpg"]{
+    width: 64.64px;
+    height: 64px;
+}
+
+header ul{
+    display: flex;
+
+}
+
+header li{
+    list-style: none;
+
+}
+
+header li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: rgba(0, 0, 0, 0.69);
+}
+.usuario-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.usuario-container a{
+    padding: 10px;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    margin-left: 110px;
+    margin-right: 187px;
+    margin-top: 150px;
+}
+
+
+.gps{
+    /* align-items: center;
+    justify-content: space-between; */
+  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 121px;
+    text-align: center;
+    background: #D9D9D9;
+    border-radius: 20px;
+    padding: 55px;
+    /* padding-top: 119px; */
+    padding-bottom: 268px;
+    padding-left: 392px;
+    padding-right: 471px;
+    margin-left: 98px;
+    margin-right: 98px;
+    padding-top:300px;
+    margin-bottom: 30px;
+    
+
+    
+}
+
+/* .gps a{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #E5E5E5;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    padding: 55px;
+    padding-bottom: 564px;
+    padding-left: 183px;
+    padding-right: 131px;
+
+} */
+

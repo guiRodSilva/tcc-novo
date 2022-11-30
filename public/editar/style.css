@@ -132,15 +132,16 @@ main .conteudo-principal{
     
 }
 
+img{
+    border-radius: 20px;
+}
+
 .noticias .noticia{
     display: flex;
     flex-direction: row;
 }
 
 .noticias .noticia .noticias-texto{
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 77px 20px;
     margin-left: 52px;
 }
 

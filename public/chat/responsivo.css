@@ -1,0 +1,95 @@
+@media (max-width:425px){
+
+img[src="/Imagens/avatar feminino.jpg"] {
+    width: 50px;
+    height: 50px;
+}
+
+img[src="/Imagens/Icones/GPS.svg"]{
+    width: 40px;
+    height: 40px;
+}
+
+img[src="/Imagens/Icones/Mensagem.svg"]{
+    width: 35px;
+    height: 35px;
+}
+
+header{
+    justify-content: inherit;
+}
+
+.titulo{
+    margin-left: 0px;
+}
+
+img[src="/Imagens/Icones/Voltar.svg"]{
+    width: 28px;
+    height: 28px;
+}
+
+.principal{
+    margin-left: 5px;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+.conversa-passa{
+    margin-top: 20px;
+}
+
+
+.conversa-agrupada{
+    margin-left: -9px;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+.conversa-olixo h5 {
+padding-right: 14px;
+}
+
+
+.conversa-olixo{
+    margin-left: 80px;
+    width: 75%;
+}
+
+.digite-icones{
+    margin-top: 42px;
+}
+
+.digite-icones input{
+    margin-left: 0px;
+}
+
+.conversa-passa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 0px; 
+    margin-right: 0px;
+}
+
+.imagem-passa {
+    margin-right: 0px;
+}
+img[src="/Imagens/Icones/Icone-audio.svg"] {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+img[src="/Imagens/Icones/Mandar-imagem.svg"] {
+    width: 30px;
+    height: 30px;
+}
+
+.icones {
+    position: relative;
+    right: 100px;
+    top: 23px;
+    display: flex;
+}
+
+}

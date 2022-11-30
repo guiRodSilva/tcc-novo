@@ -21,8 +21,16 @@
     <header>
         <img src="/Imagens/logo-redonda.png" alt="logo" class="logo">
         <div class="usuario">
-          <p> Prefeitura Municipal de Tupã </p>
-          <img src="/Imagens/avatar prefeitura.jpg" alt="avatar">
+          <h3> Prefeitura Municipal de Tupã </h3>
+          <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                     <img src="/Imagens/avatar prefeitura.jpg" alt="prefeitura">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="/sair">Sair</a></li>
+                </ul>
+              </div>
+
         </div>
     </header>
    
@@ -63,46 +71,37 @@
             <div class="divisor2"></div>
 
              {{#each conteudo}}
-                    <img src="/Imagens/{{img_nome}}" alt="">
-                    <input type="text" name="post_titulo" value="{{post_titulo}}">
-                    <input type="text" name="post_conteudo" value="{{post_conteudo}}">
-                    Data: 	{{{dateFormat post_data "DD/MM/YYYY"}}}<br>
-                    <br>
-                    <hr>
-                {{/each}}
-            
-            
-            {{!-- <section>
-                <div class="titulo_noticia">
-                    <h3> Como reciclar corretamente</h3>
-                </div>
-
-                <div class="img_noticia">
-                    <img src="/Imagens/imagens noticiais/recii.jpg" alt="imagemmmm notícia">
-                </div>
-
-                <div class="txt_noticia">
-        
-                    <p> &nbsp; Recentemente Emanuel da Silva, coletor da cidade de Tupâ, se machucou ao pegar um sacola com pedaço de vidro descartado incorrteamente, tendo que fazer quatro pontos em sua mão. Por isso viemos aqui apresentar para vocês o modo correto de descartar o lixo além de onde e como separar cada um. <br>
-                    &nbsp;Começando primeiro pelos produtos de vidro, eles devem ser colocados em algum outro local como caixa de leite por exemplo, e na sua sacola deve ter escrito a caneta avisando que é vidro o conteúdo de dentro, facilitando quem recolhe o lixo e quem acaba mexendo para encontrar algo.
-                    </p> 
-                </div> 
-
-                <div class="coisas">
-                    <div class="check">
-                            <input type="checkbox" id="Fixar" name="Fixar"
-                    checked>
-                    
-                            <label for="Fixar">Fixar</label>
+             <section>
+                    <form action="/atualizarPost" method="post" enctype="multipart/form-data">
+                        <div class="titulo_noticia">
+                            <input type="text" name="post_titulo" value="{{post_titulo}}">
+                        </div>
+                        <div class="img_noticia">
+                            <img src="/Imagens/{{img_nome}}" alt="">
+                                <div class="form-input">
+                                    <input type="file" name="sampleFile" id="file-ip-1" accept="image/*" onchange="showPreview(event)">
+                            </div>
+                        </div>
+                        <div class="txt_noticia">
+                            <input type="text" name="post_conteudo" value="{{post_conteudo}}">
+                        </div>
+                        <div class="coisas">
+                        <div class="check">
+                                <input type="checkbox" id="Fixar" name="fixar"
+                        checked>
                         
-                            <input type="checkbox" id="Ativar" name="Ativar"
-                    checked>
+                                <label for="Fixar">Fixar</label>
                             
-                            <label for="Ativar">Ativar</label>
+                                <input type="checkbox" id="Ativar" name="ativar"
+                        checked>
+                                
+                                <label for="Ativar">Ativar</label>
+                        </div>
+                        <button class="botao" type="submit">Editar</button> 
                     </div>
-                    <button class="botao" type="button">Editar</button> 
-                </div>
-            </section> --}}
+                </form>
+            </section>
+                {{/each}}
         </div>
     </main>
 </body>
