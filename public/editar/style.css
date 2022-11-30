@@ -46,6 +46,10 @@ ul li{
     font-size: 23px;
 }
 
+.noticia img{
+    width: 30%;
+    height: 30%;
+}
 .icones-navegacao .selecionado{
     background: #DEF2D5;
     border-radius: 20px;

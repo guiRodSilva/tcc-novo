@@ -5,8 +5,9 @@ exports.cadGerenciamento = async(req, res) =>{
 
 
     let {titulo, texto, fixado} = req.body
-    if(fixado = null){
-        let destaque = 0;
+
+    if(fixado == null){
+        destaque = 0;
     }
 
     else{
@@ -18,8 +19,12 @@ exports.cadGerenciamento = async(req, res) =>{
                 message: 'Erro ao fazer a conexão'
             })
         }
+
+        
         
         return db.query(
+
+            
             'INSERT INTO postagens (post_data ,post_titulo, post_conteudo, post_destaque, post_ativo, pre_id) VALUES (?,?,?, ?, 1, 6)', [new Date(), titulo, texto, destaque], async (err) => {
 
                 if (err) {

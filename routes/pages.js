@@ -79,7 +79,7 @@ router.get("/noticia/:post_id", (req, res) => {
 
 router.post('/comentar', (req, res)=>{
     const {coment} = req.body
-    db.query('INSERT INTO comentarios (use_id, coment_texto, post_id, coment_pre_resposta, coment_status, coment_moderacao) VALUES (6,?,?,?,1,1)',[coment, this.post_id, ''],  async (err, results) => {
+    db.query('INSERT INTO comentarios (use_id, coment_texto, post_id, coment_pre_resposta, coment_status, coment_moderacao) VALUES (8,?,?,?,1,1)',[coment, this.post_id, ''],  async (err, results) => {
         console.log(err)
       
         res.redirect('/feed')

@@ -113,6 +113,13 @@ header li a{
     
 }
 
+iframe{
+    width: 1341px;
+    height: 630px;
+    margin-left: 89px;
+    margin-top: 20px;
+}
+
 /* .gps a{
     color: black;
     display: flex;

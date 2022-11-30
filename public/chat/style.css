@@ -136,6 +136,7 @@ img[src="/Imagens/avatar feminino.jpg"]{
 .conversa-esquerda{
     display: flex;
     margin-left: 10px;
+    margin-top: 20px;
 
 }
 
@@ -210,6 +211,7 @@ img[src="/Imagens/avatar feminino.jpg"]{
   height: 71px;
 
   margin-left: 10px;
+  border: none;
   padding-right: 120px;
 
 }

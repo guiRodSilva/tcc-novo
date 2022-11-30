@@ -108,16 +108,22 @@
         <div class="outras-noticias">
             {{#each postagens}}
             <a href="/noticia/{{post_id}}">
+            <div class="noticia">
                     
                     <img src="/Imagens/{{img_nome}}" alt="">
                     
-                    <h1>{{post_titulo}}</h1> 
-                    Conteudo: {{post_conteudo}}<br>
-                    Data: 	{{{dateFormat post_data "DD/MM/YYYY"}}}<br>
-                    <br>
-                    <hr>
+                    <div class="outras-noticias-texto">
+                        <div>
+                            <h3>{{post_titulo}}</h3> 
+                            <p>{{post_conteudo}}</p>
+                        </div>
+                    <div class="texto-baixo1">
+                        Postada em: {{{dateFormat post_data "DD/MM/YYYY"}}}
+                    </div>
+                </div>
+            </div>
                 {{/each}}
-
+            
             </a>
 
           

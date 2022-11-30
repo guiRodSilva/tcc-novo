@@ -63,6 +63,11 @@ img[src="/Imagens/avatar prefeitura.jpg"]{
     border-bottom: 1px solid rgba(93, 166, 73, 0.75);
 }
 
+form img{
+    width: 100%;
+    height: 100%;
+}
+
 main .conteudo-principal{
     display: flex;
     flex-direction: row;
