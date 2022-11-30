@@ -81,8 +81,15 @@ img[src="/Imagens/avatar feminino.jpg"]{
 }
 
 section{
+    display: flex;
+    flex-direction: column;
     margin-left: 270px;
     margin-right: 172px;
+}
+
+section img {
+    width: 60%;
+    height: 60%;
 }
 
 img[src="/Imagens/Icones/Buscar.svg"]{
@@ -123,19 +130,20 @@ section .titulo h2{
 
 .comentarios{
     margin-left: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+form{
+    margin-top:5px
 }
 
 .comentar{
     width: 894px;
     margin-top: 40px;
-    margin-left: 200px;
-}
-
-.botao{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 30px;
+    flex-direction: row;
+    margin-left: 200px;
 }
 
 .cancelar{

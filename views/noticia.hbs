@@ -56,12 +56,18 @@
 <section>
 
      {{#each conteudo}}
+     <div class="titulo">
+        <h2>{{post_titulo}}</h2> 
+
+    </div>
                     <img src="/Imagens/{{img_nome}}" alt="">
-                    <h1>{{post_titulo}}</h1> 
-                    Conteudo: {{post_conteudo}}<br>
-                    Data: 	{{{dateFormat post_data "DD/MM/YYYY"}}}<br>
-                    <br>
-                    <hr>
+                    
+
+                    <div class="noticia">
+                        <p>{{post_conteudo}}</p>
+                    </div>
+                    
+                    
                 {{/each}}
 
 </section>
@@ -70,17 +76,18 @@
         <img src="/Imagens/avatar feminino.jpg" alt="imagem-usuario" class="usuario"> 
         <form action="/comentar" method="POST">
             <input type="text" id="coment" name="coment" placeholder="Adicione um comentário">
-            <button type="submit" value="Enviar" onClick="window.location.reload();"> Enviar </button>
+            <div class="enviar">
+                <input type="submit" value="Enviar" onClick="window.location.reload();"> </input>
+            </div>
     </form>
     </div>
     <div class="comentario">
 
         {{#each comentarios}}     
         <h1>{{coment_texto}}</h1> 
-        <hr>
     {{/each}}
 
-            </a>
+    </div>
 
         {{!-- <div class="nome_data">
             <div >
@@ -100,8 +107,7 @@
             </div>
         </div> --}}
     </div>
-    <div class="divisor"></div>
-    </div>
+    
     <script src="/noticia/index.js"></script>
 </div>
 </body>
