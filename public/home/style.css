@@ -17,6 +17,12 @@ body{
     margin-top: 32px;
 }
 
+.alerta{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
 header .container-box{
     display: flex;
     align-items: center;

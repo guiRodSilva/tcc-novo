@@ -58,7 +58,7 @@ router.get("/configuracoes",(req, res) => {
 })
 
 router.get("/perfil",(req, res) => {
-    db.query('SELECT coment_id, coment_texto, use_nome FROM comentarios INNER JOIN usuarios ON comentarios.use_id = usuarios.use_id WHERE coment_moderacao = 1', async (err, results) => {
+    db.query('SELECT usuarios.use_id, coment_id, coment_texto, use_nome FROM comentarios INNER JOIN usuarios ON comentarios.use_id = usuarios.use_id WHERE coment_moderacao = 1 AND usuarios.use_id =?',[login.useId5], async (err, results) => {
         res.render('perfil', 
         {comentarios: results, nome:login.useNome2})
     })

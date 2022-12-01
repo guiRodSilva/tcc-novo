@@ -77,7 +77,7 @@ exports.update = async (req, res) => {
                                         else{
                                             return db.rollback(() => {
                                                 console.log(err)
-                                                exports.aviso = 'logar denovo'
+                                                exports.aviso = 'Dados atualizados, logue novamente'
 
                                                 return res.redirect('/sair')
                                             });
