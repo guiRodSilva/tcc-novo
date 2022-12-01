@@ -81,13 +81,21 @@
             </div>
     </form>
     </div>
-    <div class="comentario">
+    
 
-        {{#each comentarios}}     
-        <h1>{{coment_texto}}</h1> 
+        {{#each comentarios}}
+        <div class="comentario">
+            <img src="/Imagens/avatrar vilmar gongas.png" alt="">   
+            <div class="comentario-texto">
+                <h3>{{use_nome}}</h3> 
+                <div class="use-comentario">
+                    <p>{{coment_texto}}</p> 
+                </div>
+            </div>
+        </div>
     {{/each}}
 
-    </div>
+   
 
         {{!-- <div class="nome_data">
             <div >

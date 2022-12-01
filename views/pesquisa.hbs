@@ -57,16 +57,28 @@
         
 
     </header>
-    
+    <div class="pesquisa-conteudo">
     {{#each results}}
-                <img src="/Imagens/{{img_nome}}" alt="imagem">
-                <h1>{{post_titulo}}</h1> 
-                Conteudo: {{post_conteudo}}<br>
-                Data: 	{{{dateFormat post_data "DD/MM/YYYY"}}}<br>
-                <br>
-                <hr>
-            {{/each}}
-     
+    
+        <a href="/noticia/{{post_id}}">
+                    
+                    <div class="noticia-pesquisa">
+                        
+                        <img src="/Imagens/{{img_nome}}" alt="">
+                        
+                        <div class="outras-noticias-pesquisa">
+                            <div>
+                                <h3>{{post_titulo}}</h3> 
+                                <p>{{post_conteudo}}</p>
+                            </div>
+            
+                    </div>
+                </div>
+                 </a>
+             
+                {{/each}}
+           </div>
+    
 
 
     <footer>

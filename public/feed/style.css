@@ -305,3 +305,36 @@ input.active{
     margin: 0px;
     position: relative;
 }
+
+.pesquisa-conteudo{
+    display: grid;
+    margin-left: 96px;
+    margin-right: 96px;
+    gap: 30px;
+}
+
+.noticia-pesquisa{
+    display: flex;
+    flex-direction: row;
+}
+
+.noticia-pesquisa img{
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    
+}
+
+.outras-noticias-pesquisa{
+    margin-left: 20px;
+}
+
+.outras-noticias-pesquisa h3{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.outras-noticias-pesquisa p{
+    font-weight: 400;
+    font-size: 23px;
+}

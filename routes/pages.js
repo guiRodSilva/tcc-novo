@@ -64,7 +64,7 @@ router.get("/perfil",(req, res) => {
 
 router.get("/noticia/:post_id", (req, res) => {
     exports.post_id = req.params.post_id
-    db.query('SELECT coment_texto FROM comentarios WHERE post_id = ?;',[this.post_id], async (err, results) => {
+    db.query('SELECT coment_texto, use_nome FROM comentarios INNER JOIN usuarios ON comentarios.use_id = usuarios.use_id WHERE post_id = ?;',[this.post_id], async (err, results) => {
         exports.comentarios = results
     })
 
@@ -79,7 +79,7 @@ router.get("/noticia/:post_id", (req, res) => {
 
 router.post('/comentar', (req, res)=>{
     const {coment} = req.body
-    db.query('INSERT INTO comentarios (use_id, coment_texto, post_id, coment_pre_resposta, coment_status, coment_moderacao) VALUES (8,?,?,?,1,1)',[coment, this.post_id, ''],  async (err, results) => {
+    db.query('INSERT INTO comentarios (use_id, coment_texto, post_id, coment_pre_resposta, coment_status, coment_moderacao) VALUES (?,?,?,?,1,1)',[login.useId5,coment, this.post_id, ''],  async (err, results) => {
         console.log(err)
       
         res.redirect('/feed')

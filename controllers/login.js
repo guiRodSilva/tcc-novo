@@ -28,6 +28,7 @@ exports.login = async (req, res) => {
             exports.useId2 = results[0].use_id
             exports.useId3 = results[0].use_id
             exports.useId4 = results[0].use_id
+            exports.useId5 = results[0].use_id
             if (!results || !await bcrypt.compare(use_senha, results[0].use_senha)) {
                 res.status(401).render('login', {
                     message: 'Email ou senha incorretos'
@@ -35,6 +36,7 @@ exports.login = async (req, res) => {
             
                 
             }
+            
         
             else if(results[0].use_tipo == 1){
 
