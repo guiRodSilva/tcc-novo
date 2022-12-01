@@ -58,7 +58,7 @@ router.get("/configuracoes",(req, res) => {
 })
 
 router.get("/perfil",(req, res) => {
-    db.query('SELECT * FROM comentarios', async (err, results) => {
+    db.query('SELECT coment_id, coment_texto, use_nome FROM comentarios INNER JOIN usuarios ON comentarios.use_id = usuarios.use_id WHERE coment_moderacao = 1', async (err, results) => {
         res.render('perfil', 
         {comentarios: results, nome:login.useNome2})
     })
@@ -68,7 +68,7 @@ router.get("/perfil",(req, res) => {
 
 router.get("/noticia/:post_id", (req, res) => {
     exports.post_id = req.params.post_id
-    db.query('SELECT coment_texto, use_nome FROM comentarios INNER JOIN usuarios ON comentarios.use_id = usuarios.use_id WHERE post_id = ?;',[this.post_id], async (err, results) => {
+    db.query('SELECT coment_texto, use_nome FROM comentarios INNER JOIN usuarios ON comentarios.use_id = usuarios.use_id WHERE post_id = ? AND coment_moderacao = 1;',[this.post_id], async (err, results) => {
         exports.comentarios = results
     })
 

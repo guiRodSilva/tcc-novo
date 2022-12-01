@@ -54,10 +54,19 @@
 <div class="divisor"></div>
 
 <div class="comentarios">
-    <h1>{{nome}}</h1>
-   {{#each comentarios}}     
-    <h1>{{coment_texto}}</h1> 
-    <hr>
+   
+   {{#each comentarios}} 
+   <div class="comentario">
+   
+    <img src="/Imagens/imagem.feminina.redonda.png" alt="">
+
+        <div class="comentarios-texto">
+            <h3>{{use_nome}}</h3>   
+            <div class="use-comentario">
+                <p>{{coment_texto}}</p> 
+            </div> 
+        </div>
+    </div>
     {{/each}}
 </div>
 

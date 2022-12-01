@@ -135,6 +135,7 @@ section img{
     margin-left: 70px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 
 form{
