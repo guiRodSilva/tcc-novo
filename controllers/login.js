@@ -9,7 +9,6 @@ const express = require('express')
 const router = express.Router()
 
 exports.login = async (req, res) => { 
-    
     try {
         const {use_email, use_senha} = req.body;
         if (!use_email || !use_senha) {
@@ -61,8 +60,8 @@ exports.login = async (req, res) => {
                     }
                    
                     res.cookie('userSave', token, cookieOptions);
-                    res.status(200).json({confirma: 'Sucesso', nResults: results[0].length, message: results[0]});
-                    // res.redirect('/editar')
+                    // res.status(200).json({confirma: 'Sucesso', nResults: results[0].length, message: results[0]});
+                    res.redirect('/editar')
                     
                     
                 

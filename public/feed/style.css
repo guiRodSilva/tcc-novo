@@ -191,8 +191,14 @@ p{
     flex-direction: row;
 }
 
+.outras-noticias img{
+    width: 350px;
+    height: 350px;
+}
+
 .noticia img{
     border-radius: 20px;
+   
 }
 
 .outras-noticias .noticia .outras-noticias-texto{

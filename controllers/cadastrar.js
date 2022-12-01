@@ -122,7 +122,7 @@ exports.cadastrar = async (req, res) => {
                                         return res.render('cadastrar', {
                                             message: 'Usuário cadastrado com sucesso',
                                             
-                                        }),
+                                        })
                                         res.status(200).json({confirma: 'Sucesso', message: 'Usuário cadastrado com sucesso'});
                                     });
                                 }

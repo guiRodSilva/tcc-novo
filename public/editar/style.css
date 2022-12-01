@@ -47,8 +47,8 @@ ul li{
 }
 
 .noticia img{
-    width: 30%;
-    height: 30%;
+    width: 300px;
+    height: 300px;
 }
 .icones-navegacao .selecionado{
     background: #DEF2D5;

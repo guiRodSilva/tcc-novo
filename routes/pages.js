@@ -27,15 +27,15 @@ router.get("/feed",(req, res) => {
 
     db.query('SELECT postagens.post_id, post_data, post_titulo, post_conteudo, img_nome FROM postagens INNER JOIN imagens ON postagens.post_id = imagens.post_id WHERE post_destaque = 1 AND post_ativo = 1', async (err, results) => {
         exports.fixado = results
-        
+    
       
     })
-    
+
 
     db.query('SELECT postagens.post_id, post_data, post_titulo, post_conteudo, post_destaque, img_nome FROM postagens INNER JOIN imagens ON postagens.post_id = imagens.post_id WHERE post_destaque = 0 AND post_ativo = 1', async (err, results) => {
         res.render('feed', 
         {postagens: results, pinned: this.fixado})
-        res.status(200).json({confirma: 'Sucesso', nResults: results.length, message: results});
+        // res.status(200).json({confirma: 'Sucesso', nResults: results.length, message: results});
     })
     
 
@@ -102,7 +102,7 @@ router.get('/chat', (req, res) =>{
 //GERENCIAMENTO
 
 router.get("/editar", (req, res) => {
-    db.query('SELECT postagens.post_id, post_data, post_titulo, post_conteudo, post_destaque, post_ativo, img_nome FROM postagens INNER JOIN imagens ON postagens.post_id = imagens.post_id', async (err, results) => {
+    db.query('SELECT postagens.post_id, post_data, post_titulo, post_conteudo, post_destaque, post_ativo, img_nome FROM postagens INNER JOIN imagens ON postagens.post_id = imagens.post_id WHERE post_ativo=1', async (err, results) => {
         res.render('editar', 
         {postagens: results})
     })
