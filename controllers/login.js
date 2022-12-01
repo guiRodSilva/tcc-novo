@@ -13,9 +13,13 @@ exports.login = async (req, res) => {
     try {
         const {use_email, use_senha} = req.body;
         if (!use_email || !use_senha) {
+            
             return res.status(400).render('login', {
                 message: "Please Provide an email and password"
+                
             })
+            
+            
         }
         
         db.query('SELECT * FROM usuarios WHERE use_email = ?', [use_email], async (err, results) => {
@@ -33,6 +37,7 @@ exports.login = async (req, res) => {
                 res.status(401).render('login', {
                     message: 'Email ou senha incorretos'
                 })
+                res.status(401).json({confirma: 'Erro', nResults: results[0].length, message: 'Email ou senha incorretos'});
             
                 
             }
@@ -54,9 +59,11 @@ exports.login = async (req, res) => {
                         ),
                         httpOnly: true
                     }
-    
+                   
                     res.cookie('userSave', token, cookieOptions);
-                    res.redirect('/editar')
+                    res.status(200).json({confirma: 'Sucesso', nResults: results[0].length, message: results[0]});
+                    // res.redirect('/editar')
+                    
                     
                 
 
@@ -77,14 +84,17 @@ exports.login = async (req, res) => {
                     ),
                     httpOnly: true
                 }
+    
                 res.cookie('userSave', token, cookieOptions);
+                // res.status(200).json({confirma: 'Sucesso', nResults: results[0].length, message: results[0]});
                 res.redirect('/configuracoes')
+
                 
                 
                 
             }
             else{
-                res.render('login', {message: 'deu tudo errado boy'})
+                res.render('login', {message: 'Erro ao logar o sistema'})
             }
             
         })
@@ -122,41 +132,5 @@ exports.logado = async (res, req, next) =>{
      }
 }
 
-//     try{
-//         const {use_email, use_senha} = req.body
-//         if(!use_email || !use_senha){
-//             return res.render('login', {
-//                 message: 'Insira um email e senha'
-//             })
-//     }
-
-    
-//         db.query('SELECT * FROM usuarios WHERE use_email = ?', [use_email], async (error, result) => {
-//             console.log(result)
-//             if( !result.length || !await bcrypt.compare(use_senha, result[0].use_senha)) {
-//                 return res.render('login', {
-//                     message: 'Email ou senha incorretos'
-//                 })
-//             } else {
-//                 const id = result[0].id
-//                 const token = jwt.sign({id}, process.env.JWT_SECRET,{
-//                     expiresIn: process.env.JWT_EXPIRES
-//                 })
-//                 console.log("the token is " + token);
-//                 const cookieOptions = {
-//                     expires: new Date (Date.now() + process.env.COOKIE_EXPIRES * 24 * 60 * 60 * 1000),
-//                     httpOnly: true
-//                 }
-//                 res.cookie("usuarioCadastrado", token, cookieOptions);
-//                 res.status(200).redirect("/profile");
-
-                
-//             }
-//         })
-           
-//     }catch(error){
-//         console.log(error)
-//     }       
-// };
-
+//  
     

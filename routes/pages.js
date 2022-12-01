@@ -30,16 +30,20 @@ router.get("/feed",(req, res) => {
         
       
     })
+    
 
     db.query('SELECT postagens.post_id, post_data, post_titulo, post_conteudo, post_destaque, img_nome FROM postagens INNER JOIN imagens ON postagens.post_id = imagens.post_id WHERE post_destaque = 0 AND post_ativo = 1', async (err, results) => {
         res.render('feed', 
         {postagens: results, pinned: this.fixado})
+        res.status(200).json({confirma: 'Sucesso', nResults: results.length, message: results});
     })
+    
 
 })
 
 router.get("/pesquisa", (req, res) => {
     res.render("pesquisa", {results:pesquisar.pesquisa})
+    
 })
 
 
