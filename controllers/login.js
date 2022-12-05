@@ -36,7 +36,6 @@ exports.login = async (req, res) => {
                 res.status(401).render('login', {
                     message: 'Email ou senha incorretos'
                 })
-                res.status(401).json({confirma: 'Erro', nResults: results[0].length, message: 'Email ou senha incorretos'});
             
                 
             }
